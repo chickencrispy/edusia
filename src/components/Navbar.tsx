@@ -25,7 +25,7 @@ export default function Navbar() {
               <li><a href="#" className="rounded-full p-0">Business</a></li>
             </ul>
             <div className="flex gap-2">
-              <div className="btn btn-text rounded-full">Sign In</div>
+              <a href="/login" className="btn btn-text rounded-full">Sign In</a>
               <div className="btn btn-error shadow-none rounded-full">Register for free</div>
             </div>
           </div>
