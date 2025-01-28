@@ -33,7 +33,7 @@ export default function LoginPage() {
       <div className='w-full sm:w-1/4 mx-auto rounded-lg p-6'>
         <h1 className='text-2xl font-bold mb-4'>Login</h1>
 
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error text-red-500 mb-3">{error}</p>}
         <form onSubmit={handleSubmit} className='space-y-2'>
           <div className="flex items-center">
             <label htmlFor="email" className='w-1/3'>Email</label>
