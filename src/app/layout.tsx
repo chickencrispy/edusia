@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Work_Sans, Geist, Geist_Mono } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import FlyonuiScript from "@/components/FlyonuiScript";
 import "./globals.scss";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -30,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={workSans.variable}>
         {children}
       </body>
       <FlyonuiScript />
